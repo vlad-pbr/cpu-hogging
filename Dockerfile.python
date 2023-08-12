@@ -1,0 +1,8 @@
+FROM docker.io/python:3.11.4-alpine
+WORKDIR /app
+
+# copy samples
+COPY . .
+
+# python as entrypoint
+ENTRYPOINT [ "python" ]
